@@ -1,0 +1,29 @@
+{
+  "short_name": "ContestReminder",
+  "name": "Contest Reminder",
+  "description": "Stay ahead in coding with Contest-Reminder! Track live, upcoming, and 24-hour contests, sharpen your skills, and compete at your best.",
+  "version": "0.1.1",
+  "icons": {
+
+    "128": "icons/icon.png"
+  },
+  "permissions": ["alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Contest-Reminder"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "windows": "Ctrl+Shift+X",
+        "mac": "MacCtrl+Shift+X"
+      },
+      "description": "Toggle My Chrome Extension"
+    }
+  },
+  "manifest_version": 3
+}

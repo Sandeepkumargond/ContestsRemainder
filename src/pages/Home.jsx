@@ -49,7 +49,7 @@ const Home = () => {
     };
   
     if (has24HoursPassed(lastApiCall) || !contestChache) {
-      fetch("https://c-r-backend.vercel.app/api/v1/contests/all")
+      fetch("https://c-r-backend.onrender.com/api/v1/contests/all")
         .then((res) => res.json())
         .then((result) => {
           console.log("API Response:", result); // Log the API response
@@ -71,7 +71,7 @@ const Home = () => {
           setError(error);
         });
   
-      fetch("https://c-r-backend.vercel.app/api/v2/notification")
+      fetch("https://c-r-backend.onrender.com/api/v2/notification")
         .then((res) => res.json())
         .then((result) => {
           if (!notificationMessage || notificationMessage !== result.message) {

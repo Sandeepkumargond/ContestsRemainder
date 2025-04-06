@@ -5,7 +5,6 @@ import {
   filterContestsWithin24Hours,
   filterUpcomingContests,
 } from "../shared/contestFilters";
-import InformationBanner from "../components/InformationBanner";
 import { contestDuration, has24HoursPassed } from "../shared/dateTimeUtility";
 import Footer from "../components/Footer";
 
@@ -151,7 +150,6 @@ const Home = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <InformationBanner />
         <div className="mt-4">
           <ContestDetails error={error} isLoaded={isLoaded} items={filter} />
         </div>

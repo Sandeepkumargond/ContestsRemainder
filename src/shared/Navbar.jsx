@@ -1,39 +1,44 @@
 import { NavLink } from "react-router-dom";
-
+import DigitalClock from "../components/Digitalclock";
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-800 p-4 fixed top-0 left-0 right-0 z-30">
+    <div className="bg-gray-800 p-4 fixed top-0 left-0 right-0 z-30 shadow-md">
       <nav className="flex justify-between items-center">
+        {/* Home Button */}
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive
-              ? "filter-invert brightness-200"
-              : "filter-invert brightness-80"
+            `w-20 text-center rounded-md px-2 py-1 text-sm font-medium transition-all duration-300 ${
+              isActive
+                ? "bg-blue-500 text-white shadow-md"
+                : "bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white"
+            }`
           }
         >
-          <div className="navbar-right">
-            <h6 className="w-14 text-center rounded-sm text-white bg-blue-600 h-7">Home</h6>
-          </div>
+          Home
         </NavLink>
 
+        {/* Digital Clock */}
+        <DigitalClock />
+
+        {/* Title */}
         <div className="text-center text-white text-xl font-semibold animate__animated animate__fadeIn">
-          <h1>Contest Remainder</h1>          
+          <h1>Contest Reminder</h1>
         </div>
 
+        {/* Settings Button */}
         <NavLink
           to="/settings"
           className={({ isActive }) =>
-            isActive
-              ? "filter-invert brightness-200"
-              : "filter-invert brightness-80"
+            `w-24 text-center rounded-md px-2 py-1 text-sm font-medium transition-all duration-300 ${
+              isActive
+                ? "bg-blue-500 text-white shadow-md"
+                : "bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white"
+            }`
           }
         >
-          <div className="navbar-left">
-          <h6 className="w-16 text-center rounded-sm text-white bg-blue-600 h-7">Settings</h6>
-
-          </div>
+          Settings
         </NavLink>
       </nav>
     </div>

@@ -4,7 +4,6 @@ import plateformImage from "../shared/GetPlateformImage";
 import Footer from "../components/Footer";
 import appInit from "../initialzeApp";
 import { useEffect, useState } from "react";
-import InformationBanner from "../components/InformationBanner";
 
 const Settings = () => {
   const [selectedSites, setSelectedSites] = useState(() => {
@@ -94,9 +93,7 @@ const Settings = () => {
       
       {/* Main Content */}
       <div className="mt-2 px-4 pb-6"> 
-        {showBanner && (
-          <InformationBanner message={"Application has been reset"} />
-        )}
+        
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {plateforms.map((plateform) => (
             <PlateformCard

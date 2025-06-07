@@ -11,7 +11,6 @@ A lightweight and efficient **Coding Contest Reminder** project that helps progr
 - 🗓️ View **Upcoming**, **IN 24hrs**, and **All** contests
 - 🔔 **Reminder Notifications** before contests begin
 - 📌 **Platform Filters** – See contests only from platforms you care about
-- ⭐ Add contests to your **personal schedule**
 - 🖱️ One-click access to contest links
 - 💾 Uses Chrome storage (for Chrome Extension) or local database to cache data
 - ⏱️ Automatically fetches and updates data every hour
@@ -29,14 +28,14 @@ A lightweight and efficient **Coding Contest Reminder** project that helps progr
 
 ## 📦 Tech Stack
 
-- **Frontend**: React / HTML + CSS + JavaScript
+- **Frontend**: React.js
 - **Extension**: Chrome Extension APIs
-- **Backend/API**: Fetches data from public contest APIs (e.g., [kontests.net](https://kontests.net))
+- **Backend/API**: Fetches data from public contest APIs (e.g., (https://clist.by/)
 - **Storage**: Chrome local storage or IndexedDB (if using as an extension)
 
 ## 📷 Screenshots
 
-> _You can add images or GIFs here showing the UI, reminders, filters, etc._
+![Screenshot 2025-06-07 125100](https://github.com/user-attachments/assets/1c6d5ace-f450-4dac-8bbc-16a72b1aec8f)
 
 ## 🛠️ Setup Instructions
 

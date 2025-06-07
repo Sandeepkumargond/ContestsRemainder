@@ -52,12 +52,6 @@ npm install
 ```bash
 npm start
 ```
-4. For Chrome Extension (Optional)
- -Go to chrome://extensions/
- -Enable Developer mode
- -Click on Load Unpacked
- -Select the build/ folder after running npm run build
-
 🧑‍💻 **Author**
 -Sandeep Kumar Gond
 -GitHub:https://github.com/Sandeepkumargond
